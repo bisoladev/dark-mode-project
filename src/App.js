@@ -4,6 +4,11 @@ import Article from "./Article";
 
 function App() {
   const [theme, setTheme] = useState("light-theme");
+
+  useEffect(() => {
+    document.documentElement.className = theme;
+    console.log(document.documentElement);
+  }, [theme]);
   return (
     <main>
       <nav className="nav-center">
