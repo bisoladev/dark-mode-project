@@ -3,6 +3,7 @@ import data from "./data";
 import Article from "./Article";
 
 function App() {
+  const [theme, setTheme] = useState("light-theme");
   return (
     <main>
       <nav className="nav-center">
